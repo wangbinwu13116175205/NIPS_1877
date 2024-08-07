@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/home/wbw/anaconda3/bin/jupyter-notebook", line 11, in <module>
+    sys.exit(main())
+  File "/home/wbw/anaconda3/lib/python3.7/site-packages/jupyter_core/application.py", line 266, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/home/wbw/anaconda3/lib/python3.7/site-packages/traitlets/config/application.py", line 657, in launch_instance
+    app.initialize(argv)
+  File "</home/wbw/anaconda3/lib/python3.7/site-packages/decorator.py:decorator-gen-7>", line 2, in initialize
+  File "/home/wbw/anaconda3/lib/python3.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/home/wbw/anaconda3/lib/python3.7/site-packages/notebook/notebookapp.py", line 1630, in initialize
+    self.init_webapp()
+  File "/home/wbw/anaconda3/lib/python3.7/site-packages/notebook/notebookapp.py", line 1407, in init_webapp
+    self.http_server.listen(port, self.ip)
+  File "/home/wbw/anaconda3/lib/python3.7/site-packages/tornado/tcpserver.py", line 151, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/home/wbw/anaconda3/lib/python3.7/site-packages/tornado/netutil.py", line 174, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 99] Cannot assign requested address
